@@ -1,0 +1,34 @@
+:root {
+  --steelBlue: #4381c1;
+  --viridian: #5B8266;
+  --alabaster: #e8eddf;
+  --saffron: #f5cb5c;
+  --jet: #433A3F;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+.App {
+  text-align: center;
+  background-color: var(--jet);
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 0 10px var(--jet);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html 
+{
+  background-color: var(--viridian);
+}
+img {
+  max-width:70%;
+}
