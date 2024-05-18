@@ -7,7 +7,7 @@ const ImageTextComponent = ({ imageSrc, altText, children, reverse }) => {
     return (
         <div className={classes}>
             <img src={imageSrc} alt={altText} />
-            <p>{children}</p>
+            <div className='bodyText'>{children}</div>
         </div>
     );
 };
