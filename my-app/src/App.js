@@ -6,8 +6,8 @@ import Header from './components/js/Header';
 import Footer from './components/js/Footer';
 import Home from './pages/js/Home';
 import Contact from './pages/js/Contact';
-import CobbleWebGL from './components/iframes/CobbleWebGL';
-import DonWebGL from './components/iframes/DonWebGL';
+import CobbleWebGL from './pages/js/CobbleWebGL';
+import DonWebGL from './pages/js/DonWebGL';
 
 function App() {
   return (

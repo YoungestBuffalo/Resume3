@@ -3,6 +3,7 @@
     justify-content: center;
     margin-top: 30px;
 }
+
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
@@ -23,6 +24,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
@@ -32,6 +34,7 @@
   display: flex;
   align-self: flex-start;
 }
+
 #fs-frm fieldset {
   display: flex;
   flex-direction: column;
@@ -50,6 +53,7 @@
   display: flex;
   align-self: flex-start;
 }
+
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
@@ -59,11 +63,13 @@
   outline-color: var(--jet);
   outline-offset: -1px;
 }
+
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
   width: 100%;
   align-items: center;
 }
+
 #fs-frm [type="button"],
 #fs-frm [type="submit"] {
   width: auto;
@@ -76,10 +82,12 @@
   justify-content: center;
   display: flex;
 }
+
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus {
   outline: none;
 }
+
 #fs-frm [type="submit"] {
   margin-bottom: 30px;
   display: flex;
@@ -87,37 +95,38 @@
   width: 100%;
   font-size: 20px;
 }
-#fs-frm .button-container {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-  }
-  
-  #fs-frm input,
-  #fs-frm textarea {
-    width: 100%;
-    box-sizing: border-box; 
-  }
-  
-  #fs-frm label {
-    align-self: initial;
-    font-size: 20px;
-    color: var(--alabaster);
-    width: 100%;
-  }
-  #fs-frm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 500px; 
-    margin: 0 auto;
-  }
 
-  @media (max-width: 600px) {
-    #fs-frm {
-      width: 80%;
-    }
+#fs-frm .button-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+  
+#fs-frm input,
+#fs-frm textarea {
+  width: 100%;
+  box-sizing: border-box; 
+}
+  
+#fs-frm label {
+  align-self: initial;
+  font-size: 20px;
+  color: var(--alabaster);
+  width: 100%;
+}
+#fs-frm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #fs-frm {
+    width: 80%;
+  }
 }
 
 

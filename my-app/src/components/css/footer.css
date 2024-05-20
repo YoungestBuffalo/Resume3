@@ -1,4 +1,3 @@
-/* Footer container */
 .footer {
     background-color: var(--alabaster);
     color: var(--jet);
@@ -14,20 +13,18 @@
       width: 90%;
 }
 
-/* Footer text */
 .footer p {
     color: var(--jet);
     font-size: 16px;
     font-style: italic;
 }
 
-/* Footer link */
+
 .footer a {
     color: var(--steelBlue);
     text-decoration: none;
 }
 
-/* Footer link hover effect */
 .footer a:hover {
     color: var(--steelBlue);
     text-decoration: underline;

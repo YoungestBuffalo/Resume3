@@ -1,11 +1,13 @@
 import React from 'react';
 import "../css/home.css";
+
 import ImageTextComponent from '../../components/js/ImageTextComponent';
+import CenteredTextComponent from '../../components/js/CenteredTextComponent';
+
 import profileImage from "../../images/profile.jpg";
 import projectImage from "../../images/projects.jpg";
 import blogImage from "../../images/blog.jpg";
 import collaborationImage from "../../images/collaboration.jpg";
-import CenteredTextComponent from '../../components/js/CenteredTextComponent';
 
 const Home = () => {
     return (
@@ -14,13 +16,13 @@ const Home = () => {
             Welcome to my website! I'm an experienced web developer passionate about creating innovative, efficient, and user-friendly digital solutions. Feel free to explore my work, learn more about my background, and get in touch. Thank you for visiting!           
             </CenteredTextComponent>
             <CenteredTextComponent headerLevel={2} headerText="Julian Orr | Full-Stack Developer & Tech Enthusiast">
-            In my healthcare career at Highmark Health, I've adapted to changes and taken on varied roles. Starting as a web author for <a href='https://www.ahn.org/'>AHN</a>, I transitioned to full-time QA, refining my attention to detail. Working on a Cypress test suite for the <a href='https://www.highmark.com/'>Highmark</a> scrum team renewed my interest in software development, leading to my current role as a developer at <a href='https://goengen.com/en.html'>enGen</a>. My diverse experiences gave equip me with a unique perspective and skills that I bring to all my work.          
+            In my healthcare career at Highmark Health, I've adapted to changes and taken on varied roles. Starting as a web author for <a href="https://www.ahn.org/" target="_blank" rel="noopener noreferrer">AHN</a>, I transitioned to full-time QA, refining my attention to detail. Working on a Cypress test suite for the <a href="https://www.highmark.com/" target="_blank" rel="noopener noreferrer">Highmark</a> scrum team renewed my interest in software development, leading to my current role as a developer at <a href="https://goengen.com/en.html" target="_blank" rel="noopener noreferrer">enGen</a>. My diverse experiences gave equip me with a unique perspective and skills that I bring to all my work.          
             </CenteredTextComponent>
             <ImageTextComponent imageSrc={profileImage} altText="Profile">
             I've navigated diverse roles. Starting as a web author working in downtown Pittsburgh, I transitioned to QA and remote work during the pandemic, ensuring digital platforms' functionality and quality. I contributed to a Cypress test suite for the Highmark.com Scrum Team, showcasing my proficiency in testing and automation. Now, as a developer at enGen, I drive innovation and deliver top-notch solutions.            
             </ImageTextComponent>
             <ImageTextComponent imageSrc={projectImage} altText="Projects" reverse>
-            After briefly pursuing a degree in wildlife biology, I shifted my focus towards the tech industry. I took IT classes at CCAC while working nightshifts at the Fairmont Pittsburgh, before immersing myself in a three-month tech bootcamp. Graduating in 2019 from the coding bootcamp <a href='https://www.academypgh.com/'>Academy PGH</a> marked a pivotal moment in my journey, igniting my passion for software development and paving the way for my subsequent career in the healthcare industry.
+            After briefly pursuing a degree in wildlife biology, I shifted my focus towards the tech industry. I took IT classes at CCAC while working nightshifts at the Fairmont Pittsburgh, before immersing myself in a three-month tech bootcamp. Graduating in 2019 from the coding bootcamp <a href="https://www.academypgh.com/" target="_blank" rel="noopener noreferrer">Academy PGH</a> marked a pivotal moment in my journey, igniting my passion for software development and paving the way for my subsequent career in the healthcare industry.
             <hr></hr><br />
             Throughout my career, I've been actively involved in diverse projects that have enriched my skill set and broadened my professional horizons. I've contributed to various digital initiatives within Highmark Health and its subsidiaries, including projects for AHN.org and Highmark.com. These experiences have honed my abilities in web development and user experience design. Additionally, I've participated in yearly game jams, fostering creativity and collaboration while exploring new avenues of game development, design and and project management.            </ImageTextComponent>
             <ImageTextComponent imageSrc={blogImage} altText="Blog" >
