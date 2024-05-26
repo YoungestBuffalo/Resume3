@@ -1,9 +1,10 @@
 :root {
-  --steelBlue: #4381c1;
-  --viridian: #5B8266;
+  --lightPurp: #AAAFF8;
+  --darkPurp: #3830A1;
+  --viridian: #374E3E;
   --alabaster: #e8eddf;
-  --saffron: #f5cb5c;
-  --jet: #433A3F;
+  --saffron: #196760;
+  --jet: #272025;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;

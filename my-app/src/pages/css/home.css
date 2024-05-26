@@ -53,5 +53,5 @@ ul {
 }
 
 a {
-    color: steelblue;
+    color: var(--lightPurp);
 }

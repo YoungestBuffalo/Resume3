@@ -39,17 +39,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    color: steelblue;
+    color: var(--darkPurp);
   font-size: 20px;}
 .navbar ul li a svg {
   margin-left: 5px;
 }
-.navbar ul li a:hover {
-  color: var(--jet);
-  font-size: 21px;
-}
+
 .navbar ul li a:visited {
-  color: mediumslateblue;
+  color: var(--saffron);
 }
 
 .hamburger-menu {
@@ -65,7 +62,7 @@
 .hamburger-menu div {
   width: 2rem;
   height: 0.25rem;
-  background-color: #333;
+  background-color: var(--jet);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -79,15 +76,6 @@
 
 .hamburger-menu.open div:last-child {
   transform: rotate(-45deg) translate(0.5rem, -0.5rem);
-}
-
-.navbar ul h3{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 5px;
-  color: black;
-  font-size: 20px;
 }
 
 @media (min-width: 1000px) {
