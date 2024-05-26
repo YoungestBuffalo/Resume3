@@ -3,7 +3,7 @@ iframe {
     overflow: hidden;
     display: none;
 }
-@media (min-width: 768px) { iframe {
+@media (min-width: 1200px) { iframe {
     width:100vw; 
     height:30vw;
     display: block;

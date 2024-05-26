@@ -12,12 +12,11 @@
     width: 60%;
     margin: auto;
 }
-
 .centered-text-component h1,
 .centered-text-component h2 {
     margin-bottom: 10px;
 }
- p {
+p {
     margin-bottom: 20px;
 }
 hr{

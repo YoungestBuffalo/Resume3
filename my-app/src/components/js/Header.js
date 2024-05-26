@@ -11,49 +11,67 @@ const ExternalLinkIcon = () => (
 );
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    const getPageTitle = () => {
-        const path = location.pathname;
-        switch(path) {
-            case '/about':
-                return 'About';
-            case '/contact':
-                return 'Contact';
-            default:
-                return 'Home';
-        }
-    };
+  // Function to get the page title based on the current path
+  const getPageTitle = () => {
+    const path = location.pathname;
+    switch(path) {
+      case '/about':
+        return 'About';
+      case '/contact':
+        return 'Contact';
+      case '/cobbleclimber':
+        return 'Cobble Climber';
+      case '/don':
+        return 'Don';
+      default:
+        return 'Home';
+    }
+  };
 
-    return (
-        <header className="Header">
-            <div className="logo">{getPageTitle()}</div>
-            <nav className={`navbar ${isOpen ? 'show' : ''}`}>
-                <ul><h3>Main</h3>
-                    <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-                    <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
-                    <h3>Games</h3>
-                    <li><Link to="/cobbleclimber" onClick={toggleMenu}>Cobble Climber</Link></li>
-                    <li><Link to="/don" onClick={toggleMenu}>Don</Link></li>
-                    <h3>External</h3>
-                    <li><a href="https://github.com/YoungestBuffalo" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Github <ExternalLinkIcon /></a></li>
-                    <li><a href="https://www.linkedin.com/in/julian412/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>LinkedIn <ExternalLinkIcon /></a></li>
-                <li><a href="https://soundcloud.com/julianhenrymusic" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>SoundCloud <ExternalLinkIcon /></a></li>
-                <li><a href="https://www.instagram.com/young_buffalo/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Instagram <ExternalLinkIcon /></a></li>
-            </ul>
-            </nav>
-            <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </header>
-    );
+  //Internal links for the navigation
+  const internalLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/contact', label: 'Contact' },
+    { path: '/cobbleclimber', label: 'Cobble Climber' },
+    { path: '/don', label: 'Don' },
+  ];
+
+  // Render the header
+  return (
+    <header className="Header">
+      <div className="logo">{getPageTitle()}</div>
+      <nav className={`navbar ${isOpen ? 'show' : ''}`}>
+        <ul>
+          {/* Map through internal links and render those not matching current path */}
+          {internalLinks.map(link => (
+            link.path !== location.pathname && (
+              <li key={link.path}>
+                <Link to={link.path} onClick={toggleMenu}>{link.label}</Link>
+              </li>
+            )
+          ))}
+          {/* External links */}
+          <li><a href="https://github.com/YoungestBuffalo" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Github <ExternalLinkIcon /></a></li>
+          <li><a href="https://www.linkedin.com/in/julian412/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>LinkedIn <ExternalLinkIcon /></a></li>
+          <li><a href="https://soundcloud.com/julianhenrymusic" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>SoundCloud <ExternalLinkIcon /></a></li>
+          <li><a href="https://www.instagram.com/young_buffalo/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Instagram <ExternalLinkIcon /></a></li>
+        </ul>
+      </nav>
+      {/* Hamburger menu icon */}
+      <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
